@@ -11,6 +11,7 @@ const cartRoutes = require('./routes/cartRoutes');
 const orderRoutes = require('./routes/orderRoutes');
 
 const adminRoutes = require('./routes/adminRoutes');
+const restaurantOwnerRoutes = require('./routes/restaurantOwnerRoutes');
 
 
 
@@ -35,3 +36,4 @@ app.use('/api/orders', orderRoutes);
 
 app.use('/api/admin', adminRoutes);
 module.exports = app;
+app.use('/api/owner', restaurantOwnerRoutes);
