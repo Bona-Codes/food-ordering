@@ -6,6 +6,7 @@ import Menu from './pages/Menu'
 import Cart from './pages/Cart'
 import Orders from './pages/Orders'
 import AdminDashboard from './pages/AdminDashboard'
+import RestaurantOwnerDashboard from './pages/RestaurantOwnerDashboard'
 
 function App() {
   const token = localStorage.getItem('token')
@@ -20,6 +21,7 @@ function App() {
       <Route path="/cart" element={<Cart />} />
       <Route path="/orders" element={<Orders />} />
       <Route path="/admin" element={<AdminDashboard />} />
+      <Route path="/owner" element={<RestaurantOwnerDashboard />} />
     </Routes>
 
   )

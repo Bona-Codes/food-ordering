@@ -83,6 +83,11 @@ function Restaurants() {
                     All Restaurants
                     <span style={S.count}>{filtered.length}</span>
                 </h2>
+                {userRole === "restaurant_owner" && (
+                    <button onClick={() => navigate("/owner")} style={S.adminBtn}>
+                        🏪 My Restaurant
+                    </button>
+                )}
 
                 {userRole === "admin" && (
                     <div style={S.adminBanner}>
